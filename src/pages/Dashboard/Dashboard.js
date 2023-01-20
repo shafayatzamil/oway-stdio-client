@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
+import companyLogo from "../../assets/images/oway stdio logo.png";
 
 const Dashboard = () => {
   return (
@@ -18,6 +19,13 @@ const Dashboard = () => {
           <label htmlFor="dashboard-sidebar" className="drawer-overlay"></label>
 
           <ul className="menu p-4 overflow-y-auto w-44 bg-gray-100 mr-6  font-semibold relative">
+            <li>
+              {" "}
+              <div className="flex">
+                <img src={companyLogo} className="w-6 -mr-2" alt="" />
+                <h2 className="w-32"> Oway Studio</h2>
+              </div>
+            </li>
             <li>
               <Link to="achivement">Achievements</Link>
             </li>
@@ -41,8 +49,10 @@ const Dashboard = () => {
               <Link to="Teammates">Teammates</Link>
             </li>
 
-            <div className="absolute  bottom-8 ">
-              <button className="btn  btn-primary w-36">Logout</button>
+            <div className="absolute  bottom-4 ">
+              <button className="btn bg-[#2152D9] btn-sm w-36 lowercase">
+                Log out{" "}
+              </button>
             </div>
           </ul>
         </div>
