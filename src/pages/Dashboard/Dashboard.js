@@ -17,7 +17,7 @@ const Dashboard = () => {
         <div className="drawer-side">
           <label htmlFor="dashboard-sidebar" className="drawer-overlay"></label>
 
-          <ul className="menu p-4 overflow-y-auto w-44 bg-gray-100 mr-6  font-semibold">
+          <ul className="menu p-4 overflow-y-auto w-44 bg-gray-100 mr-6  font-semibold relative">
             <li>
               <Link to="achivement">Achievements</Link>
             </li>
@@ -41,9 +41,9 @@ const Dashboard = () => {
               <Link to="Teammates">Teammates</Link>
             </li>
 
-            {/* <div>
-              <button>Logout</button>
-            </div> */}
+            <div className="absolute  bottom-8 ">
+              <button className="btn  btn-primary w-36">Logout</button>
+            </div>
           </ul>
         </div>
       </div>
