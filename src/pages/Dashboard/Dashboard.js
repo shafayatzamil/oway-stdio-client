@@ -12,7 +12,10 @@ const Dashboard = () => {
           className="drawer-toggle"
         />
         <div className="drawer-content ">
-          {/* <h1 className="font-bold  text-3xl"> Welcome to oway stdio</h1> */}
+          <h1 className="font-bold  text-3xl">
+            {" "}
+            Welcome to oway stdio dashboard
+          </h1>
           <Outlet></Outlet>
         </div>
         <div className="drawer-side">
@@ -21,10 +24,12 @@ const Dashboard = () => {
           <ul className="menu p-4 overflow-y-auto w-44 bg-gray-100 mr-6  font-semibold relative">
             <li>
               {" "}
-              <div className="flex">
-                <img src={companyLogo} className="w-6 -mr-2" alt="" />
-                <h2 className="w-32"> Oway Studio</h2>
-              </div>
+              <Link to="/">
+                <div className="flex">
+                  <img src={companyLogo} className="w-6 -mr-2" alt="" />
+                  <h2 className="w-32"> Oway Studio</h2>
+                </div>
+              </Link>
             </li>
             <li>
               <Link to="achivement">Achievements</Link>
